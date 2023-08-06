@@ -333,4 +333,6 @@ export interface IChartApi {
 	 * @returns generated div element containing the chart.
 	 */
 	chartElement(): HTMLDivElement;
+
+	setCrossHairXY(x: number,y: number,visible: boolean): void;
 }

@@ -369,4 +369,8 @@ export class ChartApi implements IChartApi, DataUpdatesConsumer<SeriesType> {
 			sourceEvent: param.touchMouseEventData,
 		};
 	}
+
+	public setCrossHairXY(x: number,y: number,visible: boolean): void{
+		this._chartWidget.paneWidgets()[0].setCrossHair(x,y,visible);
+	}
 }
